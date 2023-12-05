@@ -13,6 +13,100 @@
     </header>
     <main>
       <!-- Student code goes here -->
+      <section class="card" id="html-section">
+       <h2>HTML</h2>
+       <ul>
+         <li>Hypertext Markup Language (HTML) is one of the three cornerstone languages used in web development: HTML, CSS, and JS. 
+         <li>It is used to create the structure of a webpage.</li>
+         <li>HTML is made up of elements that perform distinct roles.</li>
+         <li>It is made up of elements which work together to provide content and the basic framework for all pages on the web.</li>
+         <li>Though some HTML elements are visible to users, others provide important information about a HTML document and website that is used by the browser so that the page renders correctly.</li>
+         <li>In addition to elements that can be seen on the page, elements are also used to divide the content on the page and to describe the content to browsers and other developers.</li>
+         <li>Each HTML element performs a unique role. However, two elements are especially important to understanding how the structure works: the <head> and <body> elements.</li>
+         <li>The head element contains information about the webpage.</li>
+         <li>The body element represents the visible content shown to the user.</li>
+         <li>The head element contains information, or metadata, that helps the browser to render the page correctly. Elements included within the <head> are not visible when a user looks at a webpage</li>
+         <li>The head element is a container for metadata.</li>
+         <li>Metadata is data (information) about data - metadata will not be displayed on the page. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</li>
+         <li>Inside the head element we can use the title metadata tag. The title element defines the title for a webpage. This element is required and is extremely important for Search Engine Optimization (SEO).</li>
+         <li>The body element contains the content that is shown to the user. All the elements that we want the user to see and interact with must be placed inside this element.</li>
+         <li>The body element defines the body of the document, which contains the content that is visible to the user. All of the content that we want to display to users must be inside the <body> element.</li>
+         <li>When working with visible HTML elements, the content is contained between an opening tag and a closing tag.</li>
+         <li>These tags are most often represented by angle brackets (< >) with associated tag names contained inside.</li>
+         <li>Closing tags begin with a forward slash (</ >).</li>
+         <li>We insert the content between an opening tag and a closing tag so that the browser understands how to treat the content.</li>
+         <li>The body element is an example of a semantic HTML element.</li>
+         <li>In semantic HTML elements, the name of the element describes its content and the role it plays on a webpage.</li>
+         <li>When possible, it is important to use semantic HTML elements, because they make your HTML easier to read by other developers and the browser.</li>
+         <li>Semantic HTML also plays an important role in making sure your webpage is accessible to the widest variety of users, including those who use assistive technologies such as screen readers.</li>
+         <li>The words “element” and “tag” are commonly used interchangeably in the web development world, but it is important to know the difference. An element refers to the entire element from opening tag to closing tag, whereas a tag refers only to what appears inside the angle brackets.</li>
+         <li>An HTML attribute defines additional information about an element.</li>
+         <li>HTML attributes are always defined in the beginning element, never the closing element.</li>
+         <li>The p element represents a paragraph or block of text. You'll use this element extensively to wrap most of the text on your webpages.</li>
+         <li>The ul, ol and li elements represent unordered lists, ordered lists, and list items. In essence, these HTML elements represent bulleted or numbered lists.</li>
+         <li>The br element creates a line of empty space, or a line break, between two blocks of content.</li>
+         <li>The a element (which stands for anchor) creates links to the same webpage or other webpages. The href attribute points to the URL for the link.</li>
+         <li>The footer appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
+         <li>Img is an inline and empty element, which means that it doesn't start on a new line and doesn't take a closing tag.</li> 
+         <li>The img tag takes several attributes, of which src, height, width and alt are the most important.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+        <ul>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+          <li>Developers use inline CSS when they want to style an element directly in the HTML file. 
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only.</li>
+          <li>They are useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <li>An example of inline CSS is using the style attribute to change the color of a single h1 heading.</li>
+          <li>It is also possible to embed an entire stylesheet directly in the HTML file using a style element in the head element. This internal style sheet contains CSS rules for the webpage in the head section of the HTML file.</li>
+          <li>The rules only apply to that page and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code. A single change to the CSS rule will apply to all tagged page elements.</li>
+          <li>Inline CSS and internal style sheets are acceptable methods (under certain conditions) to style a webpage.</li>
+          <li>The most common way to style a webpage is by using an external CSS style sheet. This is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier.
+          <li>When using an external style sheet link the file using a link element placed in the HTML's head, for example, link rel="stylesheet" href="./assets/style.css".</li>
+        </ul>
+      </section>
+
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+        <ul>
+          <li>git status: checks what branch we are currently on</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git pull origin main: pulls down latest main branch</li>
+          <li>git checkout main: to get to main branch</li>
+          <li>git branch: list your branches (a* will appear next to the currently active branch)
+          <li>git branch [branch-name]: create a new branch at the current commit</li>
+          <li>git checkout: switch to another branch and check it out into your working directory</li>
+          <li>git merge [branch]: merge the specified branch's history into the current one</li>
+          <li>git log: show all commits in the current branch's history</li>
+          <li>Add, Commit, PR, Merge - To update the main default with the project starter code (example) steps below:</li>
+          <li>cd bootcamp</li>
+          <li>cd prework-study-guide</li>
+          <li>code .</li>
+          <li>git status (we should be in the main branch but we don't want to add our work there until it is done so we need to create a new branch to hold our work)</li>
+          <li>git checkout -b feature/starter-code:</li>
+          <li>git status (we should now be working in our new feature branch)
+          <li>git add -A (to add the starter code to the current working branch)</li>
+          <li>git commit -m "add starter code" (now that we have staged those files to be committed with a commit message that describes what the commit contains)</li>
+          <li>git pull origin main (double-check that our local branch is in sync with the base branch in GitHub)(We identify a Git command with the git keyword. Then use the pull command to receive a branch's modifications into the local environment. The origin keyword indicates the source of the pull will be in the GitHub repo. The main keyword indicates the branch. In our case, we are receiving a branch called main from the GitHub repository.)
+          <li>git push origin feature/starter-code (we are using push to push the changes we have locally to our remote GitHub branch)</li>
+        </ul>
+      </section>
+
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+        <ul>
+          <li>Enter your JavaScript notes here</li>
+        </ul>
+      </section>
+
+      <section class="card" id="references-section">
+        <h2>References</h2>
+        <ul>
+          <li>Enter your references here</li>
+        </ul>
+      </section>
     </main>
 
     <footer>
