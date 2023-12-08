@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/images/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <!-- Student code goes here -->
@@ -58,6 +59,7 @@
         <ul>
           <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
           <li>Developers use inline CSS when they want to style an element directly in the HTML file. 
+          <li>The style.css file is linked within the head element in HTML (a link element goes inside the head element).</li>
           <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only.</li>
           <li>They are useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
           <li>An example of inline CSS is using the style attribute to change the color of a single h1 heading.</li>
@@ -89,23 +91,48 @@
           <li>git merge [branch]: merge the specified branch's history into the current one</li>
           <li>git log: show all commits in the current branch's history</li>
           <li>Add, Commit, PR, Merge - To update the main default with the project starter code (example) steps below:</li>
-          <li>cd bootcamp</li>
+        </ul> 
+        <ol>
+          <li>(In command line) cd bootcamp (change directory to bootcamp)</li>
           <li>cd prework-study-guide</li>
-          <li>code .</li>
-          <li>git status (we should be in the main branch but we don't want to add our work there until it is done so we need to create a new branch to hold our work)</li>
+          <li>code . (open the Prework Study Guide in Visual Studio Code)</li>
+          <li>git status (we should be in the main branch but we do not want to add work there until it is done so we need to create a new branch to hold our work)</li>
           <li>git checkout -b feature/starter-code:</li>
-          <li>git status (we should now be working in our new feature branch)
+          <li>git status (we should be working in the new feature branch)
           <li>git add -A (to add the starter code to the current working branch)</li>
           <li>git commit -m "add starter code" (now that we have staged those files to be committed with a commit message that describes what the commit contains)</li>
           <li>git pull origin main (double-check that our local branch is in sync with the base branch in GitHub)(We identify a Git command with the git keyword. Then use the pull command to receive a branch's modifications into the local environment. The origin keyword indicates the source of the pull will be in the GitHub repo. The main keyword indicates the branch. In our case, we are receiving a branch called main from the GitHub repository.)
           <li>git push origin feature/starter-code (we are using push to push the changes we have locally to our remote GitHub branch)</li>
-        </ul>
+        </ol>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites.</li>
+          <li>Every time you do something with a webpage, such as click a button, retrieve data, or fill out a form, this is JavaScript at work.</li>
+          <li>The script.js file is linked within the body element in HTML, under the footer element and above the closing body element.</li>
+          <li>One of JavaScripts core features is variables, which store data types as values.</li>
+          <li>A variable is a named container that allows one to store data in their code.</li>
+          <li>To declare a variable use the var keyword.</li>
+          <li>After the var keyword give the variable a name.</li>
+          <li>Then use an assignment operator ( = ) to assign the specific data that will be stored in the variable.
+          <li>All strings are surrounded by quotation marks.</li>
+          <li>Each line of JavaScript code ends with a semicolon ( ; ).</li>
+          <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.
+          <li>Control flow can be interrupted, however, we use conditional statements and loops to control the order in which code is executed, or if it is even executed at all.</li>
+          <li>An if statement is a way of introducing decision-making into our code. Just like its name sounds, when using the if statement, code will only execute if the statement meets a condition, or is true.</li>
+          <li>When computers encounter an if statement in a JavaScript file it will check to see if the condition provided is truthy. If it is, then it will do whatever action it was asked to do in between the curly brackets. If the condition is not true, or has a value that is not truthy, then the computer will ignore whatever is in between the curly brackets and move on.</li>
+          <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy.</li>
+          <li>In JavaScript we can have more than one condition by using else if. Sometimes we want to provide more conditions than just if.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>Arrays are not limited to contain only a single type of data. A single array can store different types of data, such as strings, numbers, etc.</li>
+          <li>Strings need to be contained within quotation marks.</li>
+          <li>To work with individual data items inside an array we need to have the location of the data item in the array. This location is identified with a unique number called an index. Using each piece of data's index, or location number, then individual data can be accessed inside the array.</li>
+          <li>In JavaScript, and many other programming languages, arrays are zero-indexed and sequential. This means that the first item in any array has an index of 0, not 1. The indices (or location identifiers) will always be whole numbers that increase by 1 each time.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array. It does this by allowing a single code block to be executed over and over.</li>
+          <li>Commenting out code makes it inactive (without deleting it) in case you need it later.</li>
+          <li>To comment out lines of JavaScript code put /* before and */ after the block of code.</li>
         </ul>
       </section>
     </main>
@@ -113,5 +140,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
